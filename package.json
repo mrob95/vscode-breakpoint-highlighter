@@ -2,15 +2,15 @@
   "name": "breakpoint-highlighter",
   "displayName": "breakpoint-highlighter",
   "publisher": "mrob95",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mrob95/vscode-breakpoint-highlighter"
-    },
-    "bugs": {
-        "url": "https://github.com/mrob95/vscode-breakpoint-highlighter/issues"
-    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrob95/vscode-breakpoint-highlighter"
+  },
+  "bugs": {
+    "url": "https://github.com/mrob95/vscode-breakpoint-highlighter/issues"
+  },
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.74.0"
   },
