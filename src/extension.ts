@@ -30,9 +30,16 @@ function updateDecorations() {
         if (b.condition) {
             decoration.renderOptions = {
                 after: {
-                    contentText: " " + b.condition,
+                    contentText: " ⬤ " + b.condition,
                 },
             };
+        } else if (b.logMessage) {
+            decoration.renderOptions = {
+                after: {
+                    contentText: " ◆ " + b.logMessage,
+                },
+            };
+
         }
         decorations.push(decoration);
     }
