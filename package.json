@@ -21,7 +21,23 @@
     "onStartupFinished"
   ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "configuration": {
+      "title": "Breakpoint Highlighter",
+      "properties": {
+        "breakpointHighlighter.backgroundColor": {
+          "type": "string",
+          "default": "rgba(255, 0, 0, 0.2)",
+          "description": "Background color"
+        },
+        "breakpointHighlighter.afterColor": {
+          "type": "string",
+          "default": "#FF0000",
+          "description": "After color"
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
