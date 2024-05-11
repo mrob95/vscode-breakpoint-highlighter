@@ -1,10 +1,12 @@
 import * as vscode from 'vscode';
 
+const configuration = vscode.workspace.getConfiguration('breakpointHighlighter')
+
 const breakpointDecorationType = vscode.window.createTextEditorDecorationType({
 	isWholeLine: true,
-    backgroundColor: 'rgba(255, 0, 0, 0.2)',
+    backgroundColor: configuration.get('backgroundColor'),
     after: {
-        color: "#FF0000",
+        color: configuration.get('afterColor'),
     }
 });
 
